@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Lfp-bv-SmD">
+                                <rect key="frame" x="0.0" y="20" width="375" height="293"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">腾讯数码讯（水蓝）下代iPhone三款新机已基本敲定将于9月12日正式发布，所以接下来这些机型将拥有怎样的特色，在何时以怎样的价格面市，自然也成了大家关注的焦点。而现在，则有网友在微博上曝光了一张疑似iPhone 7s和7s Plus以及iPhone 8在国内市场的发售时间以及相关价格的图表，并显示三款新机的起售价格分别为5388元，6388元和7888原本，但iPhone 8（iPhone X Edition）的起始价格可能会调整至8188元，与过去泄露的信息比较吻合。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6oH-4j-QS3">
+                                <rect key="frame" x="20" y="313" width="335" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="UfW-SO-J4i"/>
+                                </constraints>
+                                <state key="normal" title="Auto Spacing"/>
+                                <connections>
+                                    <action selector="autoSpacing:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cXf-FW-8Ag"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Waiting for spacing.." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OI1-KY-ph7">
+                                <rect key="frame" x="0.0" y="353" width="375" height="314"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Lfp-bv-SmD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BC6-dv-rPe"/>
+                            <constraint firstItem="6oH-4j-QS3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="OsQ-Bg-vtw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OI1-KY-ph7" secondAttribute="trailing" id="PW0-We-O1I"/>
+                            <constraint firstItem="OI1-KY-ph7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Q2o-fu-0Cb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6oH-4j-QS3" secondAttribute="trailing" constant="20" id="TJR-Dt-LvX"/>
+                            <constraint firstItem="6oH-4j-QS3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="WGD-Kr-k2W"/>
+                            <constraint firstItem="Lfp-bv-SmD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="WpL-My-vpD"/>
+                            <constraint firstItem="6oH-4j-QS3" firstAttribute="top" secondItem="Lfp-bv-SmD" secondAttribute="bottom" id="is6-QB-U6O"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OI1-KY-ph7" secondAttribute="bottom" id="p97-fQ-l0W"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Lfp-bv-SmD" secondAttribute="trailing" id="tMO-SR-buL"/>
+                            <constraint firstItem="OI1-KY-ph7" firstAttribute="top" secondItem="6oH-4j-QS3" secondAttribute="bottom" id="uSa-Jf-Pr9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="bottomTextView" destination="OI1-KY-ph7" id="HsU-MY-Tbj"/>
+                        <outlet property="topTextView" destination="Lfp-bv-SmD" id="rM0-WE-bcv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
